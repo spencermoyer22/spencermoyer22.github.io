@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #5d001e;
-    --secondary-color: #e3e2df;
-    --third-color: #e3afbc;
-    --fourth-color: #9a1750;
+    --primary-color: #687864;
+    --secondary-color: #31708e;
+    --third-color: #8fc1e3;
+    --fourth-color: #f7f9fb;
 }
 
 * {
@@ -13,7 +13,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--fourth-color);
+    color: var(--secondary-color);
+    background-color: var(--fourth-color);
+}
+
+a {
+    text-decoration: none;
 }
 
 /*begin applying styles to header*/
@@ -25,16 +30,17 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 header a {
-    text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--fourth-color);
 }
 
 header nav {
@@ -55,3 +61,36 @@ header nav ul li a {
 }
 
 /*end applying header styles*/
+
+/*begin styling hero section*/
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--secondary-color);
+    justify-content: center;
+    text-align: center;
+}
+
+.hero img {
+    border-radius: 50%;
+    flex: 0;
+    height: 225px;
+    width: 250px;
+    padding: 20px 20px 0 20px;
+}
+
+.hero h2 {
+    flex: 1 100%;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.hero h3 {
+    flex: 1 100%;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+/*finish hero section style*/
