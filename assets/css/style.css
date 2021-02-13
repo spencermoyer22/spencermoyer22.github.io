@@ -94,8 +94,17 @@ header nav ul li a {
 .section-title {
     padding: 15px 20px;
     text-align: center;
-    border-bottom: 2px solid;
-    width: 40%;
     margin: 0 auto 30px auto;
     font-size: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content:"";
+    height: 2px;
+    background-color: var(--primary-color);
+    width: 15%;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 7.5%);
 }
