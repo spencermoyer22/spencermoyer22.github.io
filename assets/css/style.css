@@ -25,18 +25,30 @@ a {
 
 header {
     padding: 15px 35px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
+    
 }
 
-header h1 {
-    font-weight: bold;
-    font-size: 20px;
+
+.header-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.header-img img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 15px;
 }
 
 header a {
@@ -70,27 +82,20 @@ header nav ul li a {
     color: var(--secondary-color);
     justify-content: center;
     text-align: center;
-}
-
-.hero img {
-    border-radius: 50%;
-    flex: 0;
-    height: 225px;
-    width: 250px;
-    padding: 20px 20px 0 20px;
-}
-
-.hero h2 {
-    flex: 1 100%;
-    padding: 10px;
-    font-size: 28px;
-    font-weight: lighter;
-}
-
-.hero h3 {
-    flex: 1 100%;
-    font-size: 24px;
-    font-weight: lighter;
+    background-image: url(../img/football-team.jpeg);
+    background-size: cover;
+    height: 500px;
+    background-position: 100%;
+    background-attachment: fixed;
 }
 
 /*finish hero section style*/
+
+.section-title {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 2px solid;
+    width: 40%;
+    margin: 0 auto 30px auto;
+    font-size: 40px;
+}
