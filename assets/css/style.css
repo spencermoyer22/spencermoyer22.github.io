@@ -1,7 +1,7 @@
 :root {
     --primary-color: #687864;
     --secondary-color: #31708e;
-    --third-color: #8fc1e3;
+    --third-color: #5085a5;
     --fourth-color: #f7f9fb;
 }
 
@@ -21,20 +21,31 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 /*begin applying styles to header*/
 
 header {
     padding: 15px 35px;
-    background-color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    
+    background-image: url(../img/football-team.jpeg);
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+    z-index: 9999;
 }
 
+header h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
 
 .header-img {
     display: flex;
@@ -57,10 +68,10 @@ header a {
 
 header nav {
     margin: 10px 0;
+    width: 30%;
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -91,20 +102,67 @@ header nav ul li a {
 
 /*finish hero section style*/
 
+/* style section titles and underlines*/
 .section-title {
     padding: 15px 20px;
     text-align: center;
-    margin: 0 auto 30px auto;
+    margin: 20px auto 30px auto;
     font-size: 40px;
     position: relative;
+    width: 400px;
+    color: var(--secondary-color);
 }
 
-.section-title::after {
+.primary-border::after {
     content:"";
     height: 2px;
     background-color: var(--primary-color);
-    width: 15%;
+    width: 100px;
     position: absolute;
     bottom: 0;
-    left: calc(50% - 7.5%);
+    left: 150px;
+}
+
+/* begin styling about me section*/
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--third-color);
+}
+
+.intro-par p {
+    flex: 1;
+    padding: 10px 35px;
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+.intro-par {
+    flex: 1 50%;
+    padding: 0 35px;
+}
+
+.intro ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex: 1 40%;
+}
+
+.logo {
+    font-size: 24px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.logo span {
+    margin-left: 10px;
 }
