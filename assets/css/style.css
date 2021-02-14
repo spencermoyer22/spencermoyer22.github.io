@@ -1,14 +1,16 @@
 :root {
-    --primary-color: #687864;
-    --secondary-color: #31708e;
-    --third-color: #5085a5;
-    --fourth-color: #f7f9fb;
+    --primary-color: #40401b;
+    --secondary-color: #76942e;
+    --third-color: #ddddd8;
+    --fourth-color: #f8f7fc;
+    --fifth-color: #1e1f12;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-padding-top: 90px;
 }
 
 body {
@@ -37,7 +39,7 @@ header {
     top: 0;
     background-image: url(../img/football-team.jpeg);
     background-size: cover;
-    background-position: 100%;
+    background-position: 80%;
     background-attachment: fixed;
     z-index: 9999;
 }
@@ -68,7 +70,6 @@ header a {
 
 header nav {
     margin: 10px 0;
-    width: 30%;
 }
 
 header nav ul {
@@ -79,11 +80,9 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 10px 25px;
     font-size: 1.55vw;
 }
-
-/*end applying header styles*/
 
 /*begin styling hero section*/
 
@@ -96,11 +95,9 @@ header nav ul li a {
     background-image: url(../img/football-team.jpeg);
     background-size: cover;
     height: 500px;
-    background-position: 100%;
+    background-position: 80%;
     background-attachment: fixed;
 }
-
-/*finish hero section style*/
 
 /* style section titles and underlines*/
 .section-title {
@@ -110,10 +107,10 @@ header nav ul li a {
     font-size: 40px;
     position: relative;
     width: 400px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
-.primary-border::after {
+.section-title::after {
     content:"";
     height: 2px;
     background-color: var(--primary-color);
@@ -128,7 +125,8 @@ header nav ul li a {
 .intro {
     display: flex;
     flex-wrap: wrap;
-    color: var(--third-color);
+    margin-bottom: 35px;
+    color: var(--secondary-color);
 }
 
 .intro-par p {
@@ -165,4 +163,42 @@ header nav ul li a {
 
 .logo span {
     margin-left: 10px;
+}
+
+/* begin styling My Work section*/
+
+.projects {
+    background-color: var(--third-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.photo-links a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects img {
+    border: solid 2px var(--fourth-color);
+}
+
+.big-image {
+    max-width: 50%;
+}
+
+.small-image {
+    max-width: 25%;
+}
+
+.projects img:hover {
+    opacity: .80;
 }
