@@ -3,7 +3,6 @@
     --secondary-color: #76942e;
     --third-color: #ddddd8;
     --fourth-color: #f8f7fc;
-    --fifth-color: #1e1f12;
 }
 
 * {
@@ -157,7 +156,7 @@ header nav ul li a {
 }
 
 .logo img {
-    height: 40px;
+    height:40px;
     width: 40px;
 }
 
@@ -181,12 +180,6 @@ header nav ul li a {
     justify-content: center;
 }
 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .projects img {
     border: solid 2px var(--fourth-color);
 }
@@ -196,9 +189,82 @@ header nav ul li a {
 }
 
 .small-image {
-    max-width: 25%;
+    max-width: 20%;
 }
 
 .projects img:hover {
     opacity: .80;
+}
+
+/* beging styling the contact me section */
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.contact p {
+    flex: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.form-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.form-links input::placeholder, .form-links textarea::placeholder {
+    color: var(--fourth-color);
+}
+
+.form-links input, .form-links textarea {
+    display: block;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 16px;
+    width: 500px;
+    padding: 5px 10px;
+    color: var(--fourth-color);
+    background: rgba(64, 64, 64, 0.5);
+    border-radius: 5px;
+}
+
+.form-links textarea {
+    height: 150px;
+}
+
+.form-links input:focus, .form-links textarea:focus {
+    outline: none;
+}
+
+.form-links button {
+    width: 100%;
+    background: rgba(64, 64, 64, 0.5);
+    color: var(--fourth-color);
+    border: 1px solid var(--primary-color);
+    padding: 7px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-links button:hover {
+    background: var(--primary-color);
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact ul li img {
+    width: 50px;
+    height: 50px;
 }
