@@ -19,4 +19,4 @@ After I had places all of the website's material into the index.html file, I mov
 https://spencermoyer22.github.io/
 
 ## Contribution
-> Made by Spencer Moyer
+Made by Spencer Moyer
