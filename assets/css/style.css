@@ -169,7 +169,7 @@ header nav ul li a {
 
 /* begin styling My Work section*/
 
-.projects {
+.my-projects {
     background-color: var(--third-color);
     display: flex;
     flex-wrap: wrap;
@@ -311,7 +311,7 @@ footer {
 
 @media screen and (max-width: 786px) {
     section {
-        padding: 30px 0;
+        padding: 30px 10px;
     }
 
     .hero {
@@ -351,10 +351,6 @@ footer {
         justify-content: center;
     }
 
-    .intro ul li {
-        padding: 0 10px;
-    }
-
     .form-links {
         width: 75%;
     }
@@ -370,14 +366,8 @@ footer {
         height: 200px;
     }
 
-    .intro {
-        padding: 0;
-        margin: 0;
-    }
-
-    .intro p {
-        padding: 0 0 5px 0;
-        margin: 0 0 5px 0;
+    .intro-par p {
+        padding: 0 0 10px 0;
     }
 
     .form-links {
