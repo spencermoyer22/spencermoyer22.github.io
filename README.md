@@ -15,7 +15,7 @@ After I had places all of the website's material into the index.html file, I mov
 ![portfolio landing page](assets/img/landing-page.png)
 > This screen shot shows the landing page for my portfolio.
 
-## Websitee
+## Website
 https://spencermoyer22.github.io/
 
 ## Contribution
