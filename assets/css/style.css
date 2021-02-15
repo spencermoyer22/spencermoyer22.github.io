@@ -126,15 +126,16 @@ header nav ul li a {
 .intro {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-bottom: 35px;
     color: var(--secondary-color);
+    padding: 0 35px;
 }
 
 .intro-par p {
     flex: 1;
     padding: 10px 35px;
     font-size: 20px;
-    margin-left: 35px;
 }
 
 .intro-par {
