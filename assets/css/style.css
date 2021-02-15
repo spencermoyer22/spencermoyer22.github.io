@@ -365,6 +365,21 @@ footer {
 }
 
 @media screen and (max-width: 575px) {
+
+    header {
+        height: 200px;
+    }
+
+    .intro {
+        padding: 0;
+        margin: 0;
+    }
+
+    .intro p {
+        padding: 0 0 5px 0;
+        margin: 0 0 5px 0;
+    }
+
     .form-links {
         width: 100%;
     }
