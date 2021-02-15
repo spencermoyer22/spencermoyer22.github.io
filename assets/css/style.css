@@ -3,6 +3,7 @@
     --secondary-color: #76942e;
     --third-color: #ddddd8;
     --fourth-color: #f8f7fc;
+    --fifth-color: #1e1f12;
 }
 
 * {
@@ -34,6 +35,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-image: url(../img/football-team.jpeg);
@@ -202,7 +204,8 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 35px;
+    margin: 35px 0;
+    padding: 35px;
 }
 
 .contact p {
@@ -219,6 +222,10 @@ header nav ul li a {
     width: 50%;
 }
 
+.email-form {
+    width: 75%;
+}
+
 .form-links input::placeholder, .form-links textarea::placeholder {
     color: var(--fourth-color);
 }
@@ -229,7 +236,7 @@ header nav ul li a {
     margin-bottom: 5px;
     width: 100%;
     font-size: 16px;
-    width: 500px;
+    width: 100%;
     padding: 5px 10px;
     color: var(--fourth-color);
     background: rgba(64, 64, 64, 0.5);
@@ -267,4 +274,97 @@ header nav ul li a {
 .contact ul li img {
     width: 50px;
     height: 50px;
+}
+
+/* begin styling footer section */
+
+footer {
+    background: var(--fifth-color);
+    color: var(--fourth-color);
+    padding: 20px 35px;
+}
+
+/* use media queries to make responsive layout */
+
+@media screen and (max-width: 980px) {
+
+    header {
+        position: relative;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .form-links ul {
+        flex-direction: row;
+        flex: 100%;
+        padding: 35px 35px 0 35px;
+        justify-content: space-between;
+    }
+
+    .email-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .header-img a{
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        flex: 100%;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li a{
+        font-size: 16px;
+    }
+
+    .intro-par {
+        flex: 100%;
+    }
+
+    .intro ul {
+        flex-flow: row wrap;
+        padding-top: 35px;
+        justify-content: center;
+    }
+
+    .intro ul li {
+        padding: 0 10px;
+    }
+
+    .form-links {
+        width: 75%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .form-links {
+        width: 100%;
+    }
 }
