@@ -129,12 +129,15 @@ header nav ul li a {
 /* begin styling about me section*/
 
 .intro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     margin-bottom: 35px;
     color: var(--secondary-color);
     padding: 0 35px;
+}
+
+.intro-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .intro-par p {
@@ -393,6 +396,10 @@ footer {
 
     header {
         height: 200px;
+    }
+
+    .intro {
+        padding: 0;
     }
 
     .intro-par p {
