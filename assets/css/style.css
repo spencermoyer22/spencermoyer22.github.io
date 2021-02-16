@@ -1,9 +1,9 @@
 :root {
     --primary-color: #40401b;
-    --secondary-color: #76942e;
+    --secondary-color: #1e1f12;
     --third-color: #ddddd8;
     --fourth-color: #f8f7fc;
-    --fifth-color: #1e1f12;
+    --fifth-color: ;
 }
 
 * {
@@ -69,6 +69,10 @@ header a {
     color: var(--fourth-color);
 }
 
+header a:hover {
+    text-decoration: underline;
+}
+
 header nav {
     margin: 10px 0;
 }
@@ -109,6 +113,7 @@ header nav ul li a {
     position: relative;
     width: 400px;
     color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(30, 31, 18, .5)
 }
 
 .section-title::after {
@@ -171,32 +176,56 @@ header nav ul li a {
 
 .my-projects {
     background-color: var(--third-color);
+    padding: 15px 0 50px 0;
+}
+
+.photo-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 50px;
 }
 
-.photo-links a {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.projects img {
-    border: solid 2px var(--fourth-color);
-}
-
-.big-image {
-    max-width: 50%;
-}
-
-.small-image {
-    max-width: 20%;
-}
-
-.projects img:hover {
+.photo-links a:hover {
     opacity: .80;
+}
+
+.first-image a {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-image: url("../img/run-buddy.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.side-box {
+    display: flex;
+    flex-flow: wrap;
+    width: 400px;
+}
+
+.side-box a {
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.box-one {
+    background-image: url("../img/the-weeknd.png");
+}
+
+.box-two {
+    background-image: url("../img/twitter.png");
+}
+
+.box-three {
+    background-image: url("../img/w3schools.png");
+}
+
+.box-four {
+    background-image: url("../img/facebook.png");
 }
 
 /* beging styling the contact me section */
@@ -205,7 +234,7 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 35px 0;
+    margin-bottom: 35px;
     padding: 35px;
 }
 
@@ -280,7 +309,7 @@ header nav ul li a {
 /* begin styling footer section */
 
 footer {
-    background: var(--fifth-color);
+    background: var(--secondary-color);
     color: var(--fourth-color);
     padding: 20px 35px;
 }
